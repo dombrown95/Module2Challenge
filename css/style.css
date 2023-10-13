@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: darkslategray;
+}
+
+.header h1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  width: 300px;
+  height: 40px;
+  padding: 20px;
+  background-color: lightblue;
+  color: black;
+}
+
+/* Main nav CSS */
+
+.main-nav {
+  display: flex;
+  list-style: none;
+}
+
+.main-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.main-nav li {
+  display: flex;
+}
+
+.main-nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 12px;
+  margin: 5px;
+  text-decoration: none;
+}
+
+.main-nav li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* hero banner CSS */
+
+.hero-banner {
+  background-size: cover;
+  background-image: url(../images/02-hero-bg.jpg);
+  height: 200px;
+  color: black;
+  display: flex;
+}
+
+.subtitle {
+  background-color:lightblue;
+  margin-left: auto;
+  margin-top: auto;
+  margin-right: 60px;
+  margin-bottom: 15px;
+  padding: 8px;
+}
+
+/* Flex container CSS */
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: lightgrey;
+}
+
+.flex-item {
+  display: flex;
+  padding: 20px;
+  width: 100%;
+  text-align: left;
+}
+
+/*about-me CSS */
+
+.about-me h2 {
+  margin-right: 50px;
+  margin-left: 125px;
+  position: relative;
+  font-size: 50px;
+  color: navy;
+}
+
+.about-me h2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 160px;
+  bottom: 0;
+  width: 5px;
+  background-color: navy;
+}
+
+.profile-photo {
+  margin-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-me p {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* work CSS */
+
+.work h2 {
+  margin-right: 50px;
+  margin-left: 125px;
+  position: relative;
+  font-size: 50px;
+  color: navy;
+}
+
+.work h2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 160px;
+  bottom: 0;
+  width: 5px;
+  background-color: navy;
+}
+
+/*contact me CSS */
+
+.contact-me h2 {
+  margin-right: 50px;
+  margin-left: 80px;
+  position: relative;
+  font-size: 50px;
+  color: navy;
+}
+
+.contact-me h2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 205px;
+  bottom: 0;
+  width: 5px;
+  background-color: navy;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.contact-links li a {
+  display: block;
+  color: black;
+  padding: 10px;
+  margin: 5px;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.work-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+}
+
+.work-item {
+  flex: 1; 
+  margin: 10px; 
+}
+
+.work-item.large {
+  flex: 2; 
+}
+
+@media (max-width: 768px) {
+  .work-item.large {
+    flex: 1;
+  }
+}
